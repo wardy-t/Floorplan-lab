@@ -1,0 +1,31 @@
+div {
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .floor-plan {
+    display: grid;
+    grid-template-areas:
+      "bedroom kitchen"
+      "bath living-room"
+      "bedroom bath"
+      "bedroom .";
+    gap: 10px;
+  }
+  
+  .kitchen {
+    grid-area: kitchen;
+  }
+  
+  .living-room {
+    grid-area: living-room;
+  }
+  
+  .bedroom:nth-child(1) {
+    grid-area: bedroom;
+  }
+  
+  .bath:nth-child(3) {
+    grid-area: bath;
+  }
